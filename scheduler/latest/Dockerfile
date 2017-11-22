@@ -50,5 +50,3 @@ RUN cd saps-engine && git checkout frontend-integration
 RUN cd fogbow-manager && mvn -e install -Dmaven.test.skip=true
 RUN cd blowout && mvn -e install -Dmaven.test.skip=true
 RUN cd saps-engine && mvn -e install -Dmaven.test.skip=true
-
-RUN cd blowout && blowout_version=$(git rev-parse HEAD) && touch blowout.version.$blowout_version
